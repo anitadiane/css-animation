@@ -1,0 +1,32 @@
+@keyframes swing{
+    0%{
+        transform:
+        rotate(-25deg);
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+
+    }
+}
+    .animate{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 0;
+        left: 100px;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0 ;
+        -webkit-animation: swing 3.0s ease-in-out forwards infinite;
+        animation: swing 3.0s ease-in-out forwards infinite;
+    }
+img {
+    height: 300px;
+    width: 300px;
+    top: -10px;
+    left: 500px;
+    position: center;
+
+}
